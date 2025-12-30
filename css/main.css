@@ -1,0 +1,12 @@
+body {
+  position: relative;
+  background-color: #b11d2e;
+}
+
+.snow {
+  position: fixed;
+  width: 100%;
+  bottom: -300px;
+  right: 0;
+  z-index: 2;
+}
