@@ -4,12 +4,645 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Письмо Деду Морозу 🎄</title>
-  <link rel="stylesheet" href="css/main.css">
   <link href="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/snow.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="image/santa-icon.png" type="image/x-icon">
+  <style>
+    @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  margin: 0.67em 0;
+  font-size: 2em;
+}
+
+hr {
+  overflow: visible;
+  height: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+pre {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  vertical-align: baseline;
+  font-size: 75%;
+  line-height: 0;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0; /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+}
+
+/**
+* Show the overflow in IE.
+* 1. Show the overflow in Edge.
+*/
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+* Remove the inheritance of text transform in Edge, Firefox, and IE.
+* 1. Remove the inheritance of text transform in Firefox.
+*/
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+* Correct the inability to style clickable types in iOS and Safari.
+*/
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+/**
+* Remove the inner border and padding in Firefox.
+*/
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+* Restore the focus styles unset by the previous rule.
+*/
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+* Correct the padding in Firefox.
+*/
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+* 1. Correct the text wrapping in Edge and IE.
+* 2. Correct the color inheritance from `fieldset` elements in IE.
+* 3. Remove the padding so developers are not caught out when they zero out
+*    `fieldset` elements in all browsers.
+*/
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+* Add the correct vertical alignment in Chrome, Firefox, and Opera.
+*/
+progress {
+  vertical-align: baseline;
+}
+
+/**
+* Remove the default vertical scrollbar in IE 10+.
+*/
+textarea {
+  overflow: auto;
+}
+
+/**
+* 1. Add the correct box sizing in IE 10.
+* 2. Remove the padding in IE 10.
+*/
+[type=checkbox],
+[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+* Correct the cursor style of increment and decrement buttons in Chrome.
+*/
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+* 1. Correct the odd appearance in Chrome and Safari.
+* 2. Correct the outline style in Safari.
+*/
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+* Remove the inner padding in Chrome and Safari on macOS.
+*/
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+* 1. Correct the inability to style clickable types in iOS and Safari.
+* 2. Change font properties to `inherit` in Safari.
+*/
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+  ========================================================================== */
+/*
+* Add the correct display in Edge, IE 10+, and Firefox.
+*/
+details {
+  display: block;
+}
+
+/*
+* Add the correct display in all browsers.
+*/
+summary {
+  display: list-item;
+}
+
+/* Misc
+  ========================================================================== */
+/**
+* Add the correct display in IE 10+.
+*/
+template {
+  display: none;
+}
+
+/**
+* Add the correct display in IE 10.
+*/
+[hidden] {
+  display: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+:root {
+  --red-color: #b11d2e;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --font-family: "Montserrat", sans-serif;
+}
+
+* {
+  font-family: "Neucha", cursive;
+}
+
+body {
+  position: relative;
+  background: url("../image/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.snow {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  z-index: 4;
+}
+
+.aroken-santa {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+  width: 45vw;
+  height: auto;
+  -webkit-animation: sway 3s ease-in-out infinite;
+          animation: sway 3s ease-in-out infinite;
+  -webkit-transform-origin: bottom center;
+      -ms-transform-origin: bottom center;
+          transform-origin: bottom center; /* точка вращения у ног */
+}
+@-webkit-keyframes sway {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  } /* наклон вправо */
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  } /* наклон влево */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+}
+@keyframes sway {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  } /* наклон вправо */
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  } /* наклон влево */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+}
+@media (max-width: 1500px) {
+  .aroken-santa {
+    right: -50px;
+  }
+}
+@media (max-width: 1000px) {
+  .aroken-santa {
+    right: 250px;
+    width: 40vw;
+  }
+}
+@media (max-width: 800px) {
+  .aroken-santa {
+    width: 55vw;
+    right: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .aroken-santa {
+    width: 80vw;
+    right: 50px;
+  }
+}
+
+.btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5;
+}
+@media (max-width: 500px) {
+  .btn {
+    top: 10px;
+    right: 10px;
+  }
+}
+.btn .button-audio {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.568);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.568);
+}
+@media (max-width: 500px) {
+  .btn .button-audio {
+    width: 40px;
+    height: 40px;
+  }
+}
+.btn .button-audio svg {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-transform: translate(50%, -50%);
+      -ms-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+@media (max-width: 500px) {
+  .btn .button-audio svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.btn .button-audio-on {
+  display: none;
+}
+.btn .button-audio-off {
+  display: block;
+}
+.btn .button-audio.active .button-audio-on {
+  display: block;
+}
+.btn .button-audio.active .button-audio-off {
+  display: none;
+}
+
+.inner {
+  width: 100%;
+  margin-top: 50px;
+}
+@media (max-width: 800px) {
+  .inner {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 500px) {
+  .inner {
+    margin-top: 20px;
+  }
+}
+
+.letter {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 750px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  margin: 0 20px;
+}
+@media (max-width: 1500px) {
+  .letter {
+    max-width: 650px;
+  }
+}
+@media (max-width: 800px) {
+  .letter {
+    max-width: 550px;
+  }
+}
+@media (max-width: 500px) {
+  .letter {
+    padding: 30px 20px;
+    overflow-y: scroll;
+  }
+}
+
+.letter-body h1 {
+  font-size: 40px;
+  color: #b40000;
+  margin-bottom: 15px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+@media (max-width: 800px) {
+  .letter-body h1 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-body h1 {
+    font-size: 28px;
+  }
+}
+
+.letter-body h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  .letter-body h2 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-body h2 {
+    font-size: 18px;
+  }
+}
+
+.letter-body p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+@media (max-width: 800px) {
+  .letter-body p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-body p {
+    font-size: 14px;
+  }
+}
+
+.letter-list td {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .letter-list td {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-list td {
+    font-size: 14px;
+  }
+}
+
+.letter-footer {
+  padding-top: 60px;
+  text-align: right;
+}
+@media (max-width: 800px) {
+  .letter-footer {
+    padding-top: 40px;
+  }
+}
+
+.letter-footer h2 {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  .letter-footer h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-footer h2 {
+    font-size: 16px;
+  }
+}
+  </style>
 </head>
 <body>
   <div class="wrapper">
@@ -59,12 +692,6 @@
                 </table>
               </td>
             </tr>
-    
-            <tr>
-              <td class="letter-footer">
-                <h2 class="letter-footer-h2">Хаят, 22 годика</h2>
-              </td>
-            </tr>
           </table>
     
         </td>
@@ -72,6 +699,24 @@
     </table>
   </div>
   <script src="https://cdn.jsdelivr.net/gh/Alaev-Co/snowflakes/dist/Snow.min.js"></script>
-  <script src="js/main.js"></script>
+  <script>
+    new Snow ();
+
+const btn = document.querySelector(".button-audio");
+const music = document.getElementById("bgMusic");
+
+music.volume = 0.4;
+
+btn.addEventListener("click", () => {
+  if (music.paused) {
+    music.play();
+    btn.classList.add("active");
+  } else {
+    music.pause();
+    btn.classList.remove("active");
+  }
+});
+
+  </script>
 </body>
 </html>

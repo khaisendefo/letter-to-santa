@@ -1,6 +1,5 @@
 new Snow ();
 
-
 const btn = document.querySelector(".button-audio");
 const music = document.getElementById("bgMusic");
 
