@@ -1,3 +1,5 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
 html {
   line-height: 1.15; /* 1 */
 }
@@ -331,16 +333,21 @@ a {
   --font-family: "Montserrat", sans-serif;
 }
 
+* {
+  font-family: "Neucha", cursive;
+}
+
 body {
   position: relative;
-  background-color: var(--red-color);
+  background: url("../image/bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .wrapper {
   position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden;
 }
 
 .snow {
@@ -348,21 +355,101 @@ body {
   width: 100%;
   bottom: 0;
   right: 0;
-  z-index: 3;
+  z-index: 4;
 }
 
 .aroken-santa {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 40vw;
+  z-index: 3;
+  width: 45vw;
   height: auto;
+  -webkit-animation: sway 3s ease-in-out infinite;
+          animation: sway 3s ease-in-out infinite;
+  -webkit-transform-origin: bottom center;
+      -ms-transform-origin: bottom center;
+          transform-origin: bottom center; /* точка вращения у ног */
+}
+@-webkit-keyframes sway {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  } /* наклон вправо */
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  } /* наклон влево */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+}
+@keyframes sway {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(5deg);
+            transform: rotate(5deg);
+  } /* наклон вправо */
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+  75% {
+    -webkit-transform: rotate(-5deg);
+            transform: rotate(-5deg);
+  } /* наклон влево */
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  } /* центр */
+}
+@media (max-width: 1500px) {
+  .aroken-santa {
+    right: -50px;
+  }
+}
+@media (max-width: 1000px) {
+  .aroken-santa {
+    right: 250px;
+    width: 40vw;
+  }
+}
+@media (max-width: 800px) {
+  .aroken-santa {
+    width: 55vw;
+    right: 200px;
+  }
+}
+@media (max-width: 500px) {
+  .aroken-santa {
+    width: 100vw;
+    right: 0;
+  }
 }
 
 .btn {
   position: fixed;
   top: 20px;
   right: 20px;
+  z-index: 5;
+}
+@media (max-width: 500px) {
+  .btn {
+    top: 10px;
+    right: 10px;
+  }
 }
 .btn .button-audio {
   position: relative;
@@ -370,6 +457,14 @@ body {
   height: 50px;
   border-radius: 50%;
   background-color: var(--white-color);
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.568);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.568);
+}
+@media (max-width: 500px) {
+  .btn .button-audio {
+    width: 40px;
+    height: 40px;
+  }
 }
 .btn .button-audio svg {
   position: absolute;
@@ -380,6 +475,12 @@ body {
   -webkit-transform: translate(50%, -50%);
       -ms-transform: translate(50%, -50%);
           transform: translate(50%, -50%);
+}
+@media (max-width: 500px) {
+  .btn .button-audio svg {
+    width: 20px;
+    height: 20px;
+  }
 }
 .btn .button-audio-on {
   display: none;
@@ -392,4 +493,140 @@ body {
 }
 .btn .button-audio.active .button-audio-off {
   display: none;
+}
+
+.inner {
+  width: 100%;
+  margin-top: 50px;
+}
+@media (max-width: 800px) {
+  .inner {
+    margin-top: 90px;
+  }
+}
+@media (max-width: 500px) {
+  .inner {
+    margin-top: 20px;
+  }
+}
+
+.letter {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 750px;
+  padding: 30px;
+  -webkit-box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.5);
+  -webkit-transform: rotate(-1deg);
+      -ms-transform: rotate(-1deg);
+          transform: rotate(-1deg);
+  margin: 0 20px;
+}
+@media (max-width: 1500px) {
+  .letter {
+    max-width: 650px;
+  }
+}
+@media (max-width: 800px) {
+  .letter {
+    max-width: 550px;
+  }
+}
+@media (max-width: 500px) {
+  .letter {
+    padding: 30px 20px;
+    overflow-y: scroll;
+  }
+}
+
+.letter-body h1 {
+  font-size: 40px;
+  color: #b40000;
+  margin-bottom: 15px;
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+@media (max-width: 800px) {
+  .letter-body h1 {
+    font-size: 33px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-body h1 {
+    font-size: 28px;
+  }
+}
+
+.letter-body h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  .letter-body h2 {
+    font-size: 21px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-body h2 {
+    font-size: 18px;
+  }
+}
+
+.letter-body p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+@media (max-width: 800px) {
+  .letter-body p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-body p {
+    font-size: 14px;
+  }
+}
+
+.letter-list td {
+  font-size: 20px;
+  line-height: 1.5;
+  padding-bottom: 10px;
+}
+@media (max-width: 800px) {
+  .letter-list td {
+    font-size: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-list td {
+    font-size: 14px;
+  }
+}
+
+.letter-footer {
+  padding-top: 60px;
+  text-align: right;
+}
+@media (max-width: 800px) {
+  .letter-footer {
+    padding-top: 40px;
+  }
+}
+
+.letter-footer h2 {
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+}
+@media (max-width: 800px) {
+  .letter-footer h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .letter-footer h2 {
+    font-size: 16px;
+  }
 }
