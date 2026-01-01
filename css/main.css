@@ -434,8 +434,8 @@ body {
 }
 @media (max-width: 500px) {
   .aroken-santa {
-    width: 100vw;
-    right: 0;
+    width: 80vw;
+    right: 50px;
   }
 }
 
